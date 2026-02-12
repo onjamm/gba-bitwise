@@ -9,11 +9,9 @@
 int main() {
     bn::core::init();
 
-    unsigned int color = 0b0'00000'11111'00000;
-
     BN_LOG("Hey!");
 
-    bn::backdrop::set_color(bn::color(color));
+    bn::backdrop::set_color(bn::color());
 
     while(true) {
         bn::core::update();
